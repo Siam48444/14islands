@@ -12,6 +12,7 @@ html {
    width: 100%;
    scroll-behavior: smooth;
    overflow: hidden auto;
+   background-color: var(--White);
 }
 
 :root {
@@ -37,7 +38,6 @@ html {
 #wrapper {
    width: 100%;
    overflow: hidden auto;
-   background-color: var(--White);
 }
 
 nav {
@@ -137,6 +137,42 @@ main {
    text-transform: uppercase;
    color: var(--Black);
    font-size: 0.9rem;
+   line-height: 1;
+}
+
+.menu_bottom {
+   height: 50%;
+   position: relative;
+   padding: clamp(1em, 3vw, 2em);
+}
+
+.menu_bottom_content {
+   height: 50%;
+   display: flex;
+   align-items: center;
+}
+
+.menu_bottom_content:first-child {
+   justify-content: start;
+}
+
+.menu_bottom_content:last-child {
+   justify-content: space-between;
+}
+
+.menu_bottom_content h1,
+.menu_bottom_content span {
+   font-family: var(--Aften_Screen);
+   font-size: 9rem;
+   font-weight: 300;
+}
+
+.menu_bottom_content h1 {
+   color: var(--Black);
+}
+
+.menu_bottom_content span {
+   color: var(--Gray);
 }
 
 .spacer {

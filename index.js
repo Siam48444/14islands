@@ -20,3 +20,10 @@ window.addEventListener("scroll", () => {
    }
    oldY = window.scrollY;
 });
+
+// gsap timeline.
+var tl = gsap.timeline();
+
+// gsap page load animation.
+tl.from("nav *", { opacity: 0, duration: 0.8, stagger: 0.15, ease: "Power5.easeInOut" });
+tl.from(".main_top_content", { opacity: 0, duration: 0.8, ease: "Power5.easeInOut" });
