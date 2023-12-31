@@ -163,11 +163,13 @@ main {
 .menu_bottom_content h1,
 .menu_bottom_content span {
    font-family: var(--Aften_Screen);
-   font-size: 9rem;
+   font-size: 10rem;
    font-weight: 300;
+   letter-spacing: -5px;
+   overflow: hidden;
 }
 
-.menu_bottom_content h1 {
+.menu_bottom_content h1 .char {
    color: var(--Black);
 }
 
