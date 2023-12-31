@@ -175,6 +175,20 @@ main {
    color: var(--Gray);
 }
 
+#area2 {
+   height: 90vh;
+   height: 90svh;
+   padding: clamp(1em, 3vw, 2em);
+   position: relative;
+}
+
+#area2 video {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0.5em;
+}
+
 .spacer {
    height: 200vh;
 }
