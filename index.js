@@ -47,7 +47,7 @@ tl.from(".main_top_content", {
 });
 
 // loaded after the hero section.
-tl.from("#area2, #area3, .spacer", {
+tl.from("#area2, #area3, #area4, .spacer", {
    display: "none",
    opacity: 0,
    duration: 0.5,

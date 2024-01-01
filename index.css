@@ -71,7 +71,7 @@ nav {
    font-family: var(--Benton_Sans_Regular);
    text-transform: uppercase;
    color: var(--Black);
-   font-size: clamp(0.7rem, 1vw, 0.8rem);
+   font-size: 0.8rem;
    position: relative;
 }
 
@@ -101,7 +101,7 @@ nav {
    font-family: var(--Benton_Sans_Regular);
    text-transform: uppercase;
    color: var(--Black);
-   font-size: clamp(0.7rem, 1vw, 0.8rem);
+   font-size: 0.8rem;
 }
 
 main {
@@ -134,7 +134,7 @@ main {
 .main_top_content p {
    font-family: var(--Benton_Sans_Regular);
    text-transform: uppercase;
-   font-size: clamp(0.7rem, 1vw, 0.8rem);
+   font-size: 0.8rem;
 }
 
 .main_top_content span {
@@ -165,9 +165,9 @@ main {
 }
 
 .main_bottom_content h1,
-.main_bottom_content span {
+.main_and_symbol {
    font-family: var(--Aften_Screen);
-   font-size: clamp(3rem, 13vw, 10rem);
+   font-size: clamp(3rem, 15vw, 10rem);
    font-weight: 300;
    letter-spacing: -3px;
 }
@@ -176,7 +176,7 @@ main {
    color: var(--Black);
 }
 
-.main_bottom_content span {
+.main_and_symbol {
    color: var(--Gray);
 }
 
@@ -250,13 +250,12 @@ main {
 .area3_bottom_content a {
    font-family: var(--Benton_Sans_Regular);
    text-transform: uppercase;
-   font-size: clamp(0.7rem, 1vw, 0.8rem);
+   font-size: 0.8rem;
    color: var(--Black);
 }
 
 #area4 {
    height: fit-content;
-   background-color: red;
    position: relative;
    overflow: hidden;
    display: grid;
@@ -270,14 +269,48 @@ main {
    flex-direction: column;
    align-items: start;
    justify-content: center;
-   aspect-ratio: 16 / 9;
+   aspect-ratio: 16 / 10;
    gap: 1em;
-   background-color: green;
 }
 
 .area4_boxes img {
    width: 100%;
    object-fit: cover;
+   border-radius: 0.5em;
+}
+
+.area4_title_div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.3em;
+}
+
+.area4_title_div p,
+.area4_title_div span {
+   font-family: var(--Benton_Sans_Regular);
+   font-size: 1.5rem;
+   line-height: 1;
+}
+
+.area4_title_div p {
+   color: var(--Black);
+}
+
+.area4_title_div span {
+   color: var(--Gray);
+}
+
+.area4_title_div div {
+   width: 1em;
+   height: 0.1em;
+   background-color: var(--Gray);
+   border-radius: 9em;
+   transition: 300ms ease-in-out width;
+}
+
+.area4_boxes:hover .area4_title_div div {
+   width: 2em;
 }
 
 .spacer {
@@ -315,6 +348,10 @@ main {
 }
 
 @media (width <= 500px) {
+   /* .main_top_content {
+      justify-content: center;
+   } */
+
    .main_top,
    .area3_bottom {
       height: 60%;
@@ -322,11 +359,17 @@ main {
 
    .main_top_content,
    .area3_bottom_content {
-      width: 90%;
+      width: 80%;
    }
 
    .main_bottom,
    .area3_top {
       height: 40%;
+   }
+}
+
+@media (width <= 400px) {
+   .main_and_symbol {
+      display: none;
    }
 }
