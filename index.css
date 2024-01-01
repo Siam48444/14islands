@@ -221,7 +221,7 @@ main {
    color: var(--Gray);
 }
 
-.area3_top h2 {
+.area3_top h2 .char {
    color: var(--Black);
 }
 
