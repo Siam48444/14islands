@@ -45,7 +45,9 @@ tl.from(".main_top_content", {
    duration: 0.8,
    ease: "Power5.easeInOut",
 });
-tl.from("#area2, .spacer", {
+
+// loaded after the hero section.
+tl.from("#area2, #area3, .spacer", {
    display: "none",
    opacity: 0,
    duration: 0.5,
