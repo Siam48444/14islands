@@ -53,3 +53,13 @@ tl.from("#area2, #area3, #area4, .spacer", {
    duration: 0.5,
    ease: "Power5.easeInOut",
 });
+
+// area2 scale in animation.
+gsap.from("#area2", {
+   scale: 0.5,
+   scrollTrigger: {
+      scrub: 1,
+      trigger: "#area2",
+      end: "top 70%",
+   },
+});

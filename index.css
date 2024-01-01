@@ -236,9 +236,6 @@ main {
 .area3_bottom_content {
    height: 100%;
    width: 50%;
-}
-
-.area3_bottom_content {
    display: flex;
    flex-direction: column;
    align-items: start;
@@ -252,6 +249,25 @@ main {
    text-transform: uppercase;
    font-size: 0.8rem;
    color: var(--Black);
+}
+
+.area3_bottom_content a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5em;
+}
+
+.area3_bottom_content a span {
+   height: 0.05em;
+   width: 1em;
+   background-color: var(--Black);
+   border-radius: 9em;
+   transition: width 300ms ease-in-out;
+}
+
+.area3_bottom_content a:hover span {
+   width: 3em;
 }
 
 #area4 {
@@ -270,6 +286,7 @@ main {
    justify-content: center;
    gap: 0.5em;
    height: 50vh;
+   height: 50svh;
 }
 
 .area4_images_div {
@@ -403,6 +420,11 @@ main {
    .main_bottom,
    .area3_top {
       height: 40%;
+   }
+
+   .area4_boxes {
+      height: 40vh;
+      height: 40svh;
    }
 }
 
