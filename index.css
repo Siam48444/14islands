@@ -257,10 +257,9 @@ main {
 #area4 {
    height: fit-content;
    position: relative;
-   overflow: hidden;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 1em;
+   gap: 0.5em;
    padding: clamp(0.7em, 2vw, 2em);
 }
 
@@ -269,14 +268,30 @@ main {
    flex-direction: column;
    align-items: start;
    justify-content: center;
-   aspect-ratio: 16 / 10;
-   gap: 1em;
+   gap: 0.5em;
+   height: 50vh;
 }
 
-.area4_boxes img {
+.area4_images_div {
    width: 100%;
-   object-fit: cover;
+   height: 90%;
+   position: relative;
+   overflow: hidden;
    border-radius: 0.5em;
+}
+
+.area4_images_div img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: brightness(1);
+   transition: 300ms ease-in-out;
+   transition-property: scale, filter;
+}
+
+.area4_boxes:hover .area4_images_div img {
+   scale: 1.05;
+   filter: brightness(0.7);
 }
 
 .area4_title_div {
@@ -289,7 +304,7 @@ main {
 .area4_title_div p,
 .area4_title_div span {
    font-family: var(--Benton_Sans_Regular);
-   font-size: 1.5rem;
+   font-size: clamp(1.3rem, 2vw, 1.5rem);
    line-height: 1;
 }
 
@@ -329,6 +344,10 @@ main {
    #hamburger_button {
       display: inline;
    }
+
+   #area4 {
+      grid-template-columns: 1fr;
+   }
 }
 
 @media (width <= 800px) {
@@ -348,10 +367,6 @@ main {
 }
 
 @media (width <= 500px) {
-   /* .main_top_content {
-      justify-content: center;
-   } */
-
    .main_top,
    .area3_bottom {
       height: 60%;
