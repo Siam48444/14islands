@@ -254,6 +254,32 @@ main {
    color: var(--Black);
 }
 
+#area4 {
+   height: fit-content;
+   background-color: red;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1em;
+   padding: clamp(0.7em, 2vw, 2em);
+}
+
+.area4_boxes {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   aspect-ratio: 16 / 9;
+   gap: 1em;
+   background-color: green;
+}
+
+.area4_boxes img {
+   width: 100%;
+   object-fit: cover;
+}
+
 .spacer {
    height: 200vh;
 }
