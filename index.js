@@ -34,7 +34,7 @@ tl.from("nav *", {
    stagger: 0.15,
    ease: "Power5.easeInOut",
 });
-tl.from(".menu_bottom_content .char", {
+tl.from(".main_bottom_content .char", {
    opacity: 0,
    duration: 1,
    stagger: 0.05,
