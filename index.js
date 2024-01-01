@@ -27,8 +27,27 @@ window.addEventListener("scroll", () => {
    oldY = window.scrollY;
 });
 
-// gsap page load animation.
-tl.from("nav *", { opacity: 0, duration: 0.8, stagger: 0.15, ease: "Power5.easeInOut" });
-tl.from(".menu_bottom_content .char", { opacity: 0, duration: 1, stagger: 0.05, ease: "Power5.easeInOut" });
-tl.from(".main_top_content", { opacity: 0, duration: 0.8, ease: "Power5.easeInOut" });
-tl.from("#area2, .spacer", { display: "none" });
+// page load animation.
+tl.from("nav *", {
+   opacity: 0,
+   duration: 0.8,
+   stagger: 0.15,
+   ease: "Power5.easeInOut",
+});
+tl.from(".menu_bottom_content .char", {
+   opacity: 0,
+   duration: 1,
+   stagger: 0.05,
+   ease: "Power5.easeInOut",
+});
+tl.from(".main_top_content", {
+   opacity: 0,
+   duration: 0.8,
+   ease: "Power5.easeInOut",
+});
+tl.from("#area2, .spacer", {
+   display: "none",
+   opacity: 0,
+   duration: 0.5,
+   ease: "Power5.easeInOut",
+});

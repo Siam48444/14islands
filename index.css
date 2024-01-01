@@ -13,6 +13,7 @@ html {
    scroll-behavior: smooth;
    overflow: hidden auto;
    background-color: var(--White);
+   scrollbar-gutter: stable;
 }
 
 :root {
@@ -166,7 +167,6 @@ main {
    font-size: 10rem;
    font-weight: 300;
    letter-spacing: -5px;
-   overflow: hidden;
 }
 
 .menu_bottom_content h1 .char {
