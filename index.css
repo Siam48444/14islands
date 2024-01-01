@@ -19,6 +19,7 @@ html {
 :root {
    /* Colors */
    --White: #f2f2f2;
+   --White_Faded: #f2f2f2a9;
    --Black: #070707;
    --Gray: #a2a2a9;
 
@@ -50,6 +51,8 @@ nav {
    inset: 0 0 auto 0;
    padding: clamp(0.7em, 2vw, 2em);
    z-index: 9;
+   background-color: var(--White_Faded);
+   backdrop-filter: blur(10px);
 }
 
 .nav_logo_svg {

@@ -28,10 +28,10 @@ window.addEventListener("scroll", () => {
 });
 
 // page load animation.
-tl.from("nav *", {
+tl.from("nav > *", {
    opacity: 0,
    duration: 0.8,
-   stagger: 0.15,
+   stagger: 0.2,
    ease: "Power5.easeInOut",
 });
 tl.from(".main_bottom_content .char", {
