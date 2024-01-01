@@ -48,7 +48,7 @@ nav {
    justify-content: space-between;
    position: fixed;
    inset: 0 0 auto 0;
-   padding: clamp(1em, 3vw, 2em);
+   padding: clamp(0.7em, 2vw, 2em);
    z-index: 9;
 }
 
@@ -105,7 +105,7 @@ main {
    height: 90vh;
    height: 90svh;
    position: relative;
-   padding: clamp(1em, 3vw, 2em);
+   padding: clamp(0.7em, 2vw, 2em);
 }
 
 .main_top {
@@ -178,9 +178,8 @@ main {
 }
 
 #area2 {
-   height: 90vh;
-   height: 90svh;
-   padding: clamp(1em, 3vw, 2em);
+   aspect-ratio: 16 / 10;
+   padding: clamp(0.7em, 2vw, 2em);
    position: relative;
 }
 
@@ -195,7 +194,7 @@ main {
    position: relative;
    height: 70vh;
    height: 70svh;
-   padding: clamp(1em, 3vw, 2em);
+   padding: clamp(0.7em, 2vw, 2em);
 }
 
 .area3_top {
@@ -271,6 +270,14 @@ main {
 }
 
 @media (width <= 800px) {
+   #area2 {
+      padding: 0;
+   }
+
+   #area2 video {
+      border-radius: 0;
+   }
+
    main,
    #area3 {
       height: 60vh;
@@ -286,7 +293,7 @@ main {
 
    .main_top_content,
    .area3_bottom_content {
-      width: 70%;
+      width: 90%;
    }
 
    .main_bottom,
