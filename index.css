@@ -13,7 +13,6 @@ html {
    scroll-behavior: smooth;
    overflow: hidden auto;
    background-color: var(--White);
-   scrollbar-gutter: stable;
 }
 
 :root {
@@ -361,6 +360,12 @@ main {
 
 .area4_boxes:hover .area4_title_div div {
    width: 2em;
+}
+
+#area5 {
+   background-color: red;
+   height: 60vh;
+   height: 60svh;
 }
 
 .spacer {
