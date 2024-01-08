@@ -432,6 +432,57 @@ main {
    padding: 3em clamp(0.7em, 2vw, 2em);
 }
 
+#area7 {
+   height: 80vh;
+   height: 80svh;
+   overflow: hidden;
+   padding: 3em clamp(0.7em, 2vw, 2em);
+}
+
+.area7_top {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.area7_bottom {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+#area7 h1,
+#area7 a {
+   font-family: var(--Aften_Screen);
+   font-size: clamp(2rem, 6vw, 6rem);
+   font-weight: 300;
+   letter-spacing: -3px;
+   line-height: 1;
+   color: var(--Black);
+   position: relative;
+}
+
+#area7 a::after {
+   position: absolute;
+   content: "";
+   background-color: var(--Black);
+   width: 0;
+   height: 0.05em;
+   right: 0;
+   bottom: 0;
+   border-radius: 9em;
+   transition: width 200ms ease-in-out;
+}
+
+#area7 a:hover::after {
+   left: 0;
+   width: 100%;
+}
+
 footer {
    display: flex;
    align-items: center;
