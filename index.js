@@ -106,3 +106,15 @@ gsap.from(".area7_bottom", {
       start: "top 70%",
    },
 });
+
+document.querySelectorAll(".area5_links").forEach((link) => {
+   gsap.from(link, {
+      x: "20%",
+      opacity: 0,
+      scrollTrigger: {
+         trigger: link,
+         scrub: 1,
+         end: "bottom 70%",
+      },
+   });
+});
