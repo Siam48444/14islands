@@ -193,13 +193,23 @@ main {
 }
 
 #area3 {
+   overflow: hidden;
    position: relative;
    height: 70vh;
    height: 70svh;
    padding: clamp(0.7em, 2vw, 2em);
 }
 
-.area3_top {
+#area6 {
+   overflow: hidden;
+   position: relative;
+   height: 100vh;
+   height: 100svh;
+   padding: clamp(0.7em, 2vw, 2em);
+}
+
+.area3_top,
+.area6_top {
    width: 100%;
    height: 50%;
    display: flex;
@@ -216,15 +226,26 @@ main {
    letter-spacing: -3px;
 }
 
-.area3_top span {
+.area6_top h1 {
+   font-family: var(--Aften_Screen);
+   font-size: clamp(2rem, 6vw, 6rem);
+   font-weight: 300;
+   letter-spacing: -3px;
+   line-height: 1;
+}
+
+.area3_top span,
+.area6_top span {
    color: var(--Gray);
 }
 
-.area3_top h2 .char {
+.area3_top h2 .char,
+.area6_top h1 {
    color: var(--Black);
 }
 
-.area3_bottom {
+.area3_bottom,
+.area6_bottom {
    width: 100%;
    height: 50%;
    display: flex;
@@ -232,7 +253,8 @@ main {
    justify-content: end;
 }
 
-.area3_bottom_content {
+.area3_bottom_content,
+.area6_bottom_content {
    height: 100%;
    width: 50%;
    display: flex;
@@ -243,21 +265,25 @@ main {
 }
 
 .area3_bottom_content p,
-.area3_bottom_content a {
+.area3_bottom_content a,
+.area6_bottom_content p,
+.area6_bottom_content a {
    font-family: var(--Benton_Sans_Regular);
    text-transform: uppercase;
    font-size: 0.8rem;
    color: var(--Black);
 }
 
-.area3_bottom_content a {
+.area3_bottom_content a,
+.area6_bottom_content a {
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 0.5em;
 }
 
-.area3_bottom_content a span {
+.area3_bottom_content a span,
+.area6_bottom_content a span {
    height: 0.05em;
    width: 1em;
    background-color: var(--Black);
@@ -265,7 +291,8 @@ main {
    transition: width 300ms ease-in-out;
 }
 
-.area3_bottom_content a:hover span {
+.area3_bottom_content a:hover span,
+.area6_bottom_content a:hover span {
    width: 3em;
 }
 
@@ -338,7 +365,7 @@ main {
 .area4_title_div p,
 .area4_title_div span {
    font-family: var(--Benton_Sans_Regular);
-   font-size: clamp(1rem, 2vw, 1.5rem);
+   font-size: clamp(1rem, 2vw, 1.3rem);
    line-height: 1;
 }
 
@@ -401,7 +428,7 @@ main {
 .area5_links h6,
 .area5_links h5 {
    font-family: var(--Benton_Sans_Regular);
-   font-size: clamp(1rem, 2vw, 1.5rem);
+   font-size: clamp(1rem, 2vw, 1.3rem);
    line-height: 1;
    font-weight: 300;
 }
@@ -468,7 +495,8 @@ main {
    }
 
    .main_top_content,
-   .area3_bottom_content {
+   .area3_bottom_content,
+   .area6_bottom_content {
       width: 80%;
    }
 
