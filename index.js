@@ -74,12 +74,14 @@ gsap.from("footer", {
    },
 });
 
+// scroll text appearing animation.
 gsap.from(".area6_top .char", {
-   duration: 0.5,
    opacity: 0,
    stagger: 0.01,
    scrollTrigger: {
       trigger: ".area6_top",
       start: "top 80%",
+      end: "bottom 80%",
+      scrub: 1,
    },
 });

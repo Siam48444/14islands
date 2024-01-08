@@ -193,14 +193,6 @@ main {
    padding: clamp(0.7em, 2vw, 2em);
 }
 
-#area6 {
-   overflow: hidden;
-   position: relative;
-   height: 100vh;
-   height: 100svh;
-   padding: clamp(0.7em, 2vw, 2em);
-}
-
 .area3_top,
 .area6_top {
    width: 100%;
@@ -385,14 +377,12 @@ main {
 }
 
 #area5 {
-   height: 60vh;
-   height: 60svh;
    overflow: hidden;
    display: flex;
    align-items: center;
    justify-content: end;
    position: relative;
-   padding: clamp(0.7em, 2vw, 2em);
+   padding: 3em clamp(0.7em, 2vw, 2em);
 }
 
 .area5_content {
@@ -432,6 +422,14 @@ main {
 
 .area5_links h5 {
    color: var(--Gray);
+}
+
+#area6 {
+   height: 100vh;
+   height: 100svh;
+   overflow: hidden;
+   position: relative;
+   padding: 3em clamp(0.7em, 2vw, 2em);
 }
 
 footer {
