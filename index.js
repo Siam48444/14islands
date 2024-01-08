@@ -47,12 +47,12 @@ tl.from(".main_top_content", {
 });
 
 // loaded after the hero section.
-// tl.from("#area2, #area3, #area4, #area5, #area6, footer", {
-//    display: "none",
-//    opacity: 0,
-//    duration: 0.5,
-//    ease: "Power5.easeInOut",
-// });
+tl.from("#area2, #area3, #area4, #area5, #area6, footer", {
+   display: "none",
+   opacity: 0,
+   duration: 0.5,
+   ease: "Power5.easeInOut",
+});
 
 // area2 scale in animation.
 gsap.from("#area2", {
@@ -78,10 +78,31 @@ gsap.from("footer", {
 gsap.from(".area6_top .char", {
    opacity: 0,
    stagger: 0.01,
+   ease: "Power5.easeInOut",
    scrollTrigger: {
       trigger: ".area6_top",
       start: "top 80%",
       end: "bottom 80%",
       scrub: 1,
+   },
+});
+gsap.from(".area7_top", {
+   opacity: 0,
+   x: "-10%",
+   duration: 1,
+   ease: "Power5.easeInOut",
+   scrollTrigger: {
+      trigger: ".area7_top",
+      start: "top 70%",
+   },
+});
+gsap.from(".area7_bottom", {
+   opacity: 0,
+   x: "10%",
+   duration: 1,
+   ease: "Power5.easeInOut",
+   scrollTrigger: {
+      trigger: ".area7_bottom",
+      start: "top 70%",
    },
 });
