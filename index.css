@@ -350,7 +350,8 @@ main {
    color: var(--Gray);
 }
 
-.area4_title_div div {
+.area4_title_div div,
+.area5_links span {
    width: 1em;
    height: 0.1em;
    background-color: var(--Gray);
@@ -363,9 +364,53 @@ main {
 }
 
 #area5 {
-   background-color: red;
    height: 60vh;
    height: 60svh;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   position: relative;
+   padding: clamp(0.7em, 2vw, 2em);
+}
+
+.area5_content {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.area5_links {
+   width: 100%;
+   padding: 1.5em 0;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 0.5em;
+   border-top: solid 0.05em var(--Gray);
+}
+
+.area5_links:last-child {
+   border-bottom: solid 0.05em var(--Gray);
+}
+
+.area5_links h6,
+.area5_links h5 {
+   font-family: var(--Benton_Sans_Regular);
+   font-size: clamp(1.2rem, 2vw, 1.5rem);
+   line-height: 1;
+   font-weight: 300;
+}
+
+.area5_links h6 {
+   color: var(--Black);
+}
+
+.area5_links h5 {
+   color: var(--Gray);
 }
 
 .spacer {
