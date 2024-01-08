@@ -338,7 +338,7 @@ main {
 .area4_title_div p,
 .area4_title_div span {
    font-family: var(--Benton_Sans_Regular);
-   font-size: clamp(1.2rem, 2vw, 1.5rem);
+   font-size: clamp(1rem, 2vw, 1.5rem);
    line-height: 1;
 }
 
@@ -359,7 +359,8 @@ main {
    transition: 300ms ease-in-out width;
 }
 
-.area4_boxes:hover .area4_title_div div {
+.area4_boxes:hover .area4_title_div div,
+.area5_links:hover span {
    width: 2em;
 }
 
@@ -400,7 +401,7 @@ main {
 .area5_links h6,
 .area5_links h5 {
    font-family: var(--Benton_Sans_Regular);
-   font-size: clamp(1.2rem, 2vw, 1.5rem);
+   font-size: clamp(1rem, 2vw, 1.5rem);
    line-height: 1;
    font-weight: 300;
 }
@@ -437,6 +438,10 @@ main {
 
    .area4_images_div svg {
       display: none;
+   }
+
+   .area5_content {
+      width: 80%;
    }
 }
 
@@ -481,5 +486,9 @@ main {
 @media (width <= 400px) {
    .main_and_symbol {
       display: none;
+   }
+
+   .area5_content {
+      width: 100%;
    }
 }
