@@ -94,13 +94,21 @@ nav {
 #hamburger_button {
    cursor: pointer;
    display: none;
+   padding: 0.3em;
 }
 
-#hamburger_button p {
-   font-family: var(--Benton_Sans_Regular);
-   text-transform: uppercase;
-   color: var(--Black);
-   font-size: 0.8rem;
+#hamburger_button span {
+   height: 0.1em;
+   background-color: var(--Black);
+   border-radius: 9em;
+}
+
+#hamburger_button span:first-child {
+   width: 1.5em;
+}
+
+#hamburger_button span:last-child {
+   width: 0.75em;
 }
 
 main {
@@ -516,7 +524,11 @@ footer {
    }
 
    #hamburger_button {
-      display: inline;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      gap: 0.1em;
    }
 
    #area4 {
