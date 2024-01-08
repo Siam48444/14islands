@@ -68,7 +68,18 @@ gsap.from("footer", {
    opacity: 0,
    x: "5%",
    duration: 1,
+   ease: "Power5.easeInOut",
    scrollTrigger: {
       trigger: "footer",
+   },
+});
+
+gsap.from(".area6_top .char", {
+   duration: 0.5,
+   opacity: 0,
+   stagger: 0.01,
+   scrollTrigger: {
+      trigger: ".area6_top",
+      start: "top 80%",
    },
 });

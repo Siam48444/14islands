@@ -227,14 +227,14 @@ main {
    line-height: 1;
 }
 
-.area3_top span,
-.area6_top span {
-   color: var(--Gray);
+.area3_top h2 .char,
+.area6_top h1 .char {
+   color: var(--Black);
 }
 
-.area3_top h2 .char,
-.area6_top h1 {
-   color: var(--Black);
+.area3_top span,
+.area6_top div {
+   color: var(--Gray);
 }
 
 .area3_bottom,
