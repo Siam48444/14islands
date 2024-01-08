@@ -153,13 +153,6 @@ main {
    height: 50%;
    display: flex;
    align-items: center;
-}
-
-.main_bottom_content:first-child {
-   justify-content: start;
-}
-
-.main_bottom_content:last-child {
    justify-content: space-between;
 }
 
