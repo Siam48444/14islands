@@ -63,3 +63,12 @@ gsap.from("#area2", {
       end: "top 70%",
    },
 });
+
+gsap.from("footer", {
+   opacity: 0,
+   x: "5%",
+   duration: 1,
+   scrollTrigger: {
+      trigger: "footer",
+   },
+});
