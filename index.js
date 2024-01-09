@@ -46,14 +46,6 @@ tl.from(".main_top_content", {
    ease: "Power5.easeInOut",
 });
 
-// loaded after the hero section.
-tl.from("#area2, #area3, #area4, #area5, #area6, #area7, footer", {
-   display: "none",
-   opacity: 0,
-   duration: 0.5,
-   ease: "Power5.easeInOut",
-});
-
 // area2 scale in animation.
 gsap.from("#area2", {
    scale: 0.5,
@@ -61,16 +53,6 @@ gsap.from("#area2", {
       scrub: 1,
       trigger: "#area2",
       end: "top 70%",
-   },
-});
-
-gsap.from("footer", {
-   opacity: 0,
-   x: "5%",
-   duration: 1,
-   ease: "Power5.easeInOut",
-   scrollTrigger: {
-      trigger: "footer",
    },
 });
 
